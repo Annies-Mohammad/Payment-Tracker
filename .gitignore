@@ -23,7 +23,6 @@ npm-debug.log
 yarn-error.log
 *.gz
 
-public
 .idea
 npm-debug.log*
 build
