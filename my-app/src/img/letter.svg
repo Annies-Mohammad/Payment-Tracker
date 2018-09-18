@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <rect id="a" width="56" height="28" x="32.669" y="57.77" rx="2"/>
+    <rect id="b" width="56" height="28" x="32.669" y="57.77" rx="2"/>
+    <rect id="d" width="56" height="28" rx="2"/>
+    <filter id="c" width="101.8%" height="107.1%" x="-.9%" y="-1.8%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowOffsetOuter1"/>
+    </filter>
+    <path id="f" d="M2,2 L23.3619598,17.199856 C26.1384287,19.1754204 29.8615713,19.1754204 32.6380402,17.199856 L54,2 L2,2 Z"/>
+    <filter id="e" width="102.9%" height="118%" x="-1.4%" y="-4.5%" filterUnits="objectBoundingBox">
+      <feOffset dy="1.5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feColorMatrix values="0 0 0 0 0.580392157 0 0 0 0 0.596078431 0 0 0 0 0.588235294 0 0 0 1 0" in="shadowOffsetOuter1"/>
+    </filter>
+    <rect id="h" width="54" height="72"/>
+    <filter id="g" width="125.9%" height="120.8%" x="-13%" y="-6.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"/>
+      <feColorMatrix values="0 0 0 0 0.670588235 0 0 0 0 0.368627451 0 0 0 0 0.0274509804 0 0 0 1 0" in="shadowOffsetOuter1" result="shadowMatrixOuter1"/>
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter2"/>
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"/>
+      <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter2" result="shadowMatrixOuter2"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="shadowMatrixOuter2"/>
+      </feMerge>
+    </filter>
+    <rect id="i" width="54" height="26"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="48" cy="48" r="45" fill="#D2D4D3"/>
+    <g transform="rotate(-15 60.67 71.77)">
+      <use fill="#FFFFFF" xlink:href="#a"/>
+      <rect width="55" height="27" x="33.169" y="58.27" stroke="#FFFFFF" rx="2"/>
+    </g>
+    <g transform="rotate(-15 60.67 71.77)">
+      <use fill="#FFFFFF" xlink:href="#b"/>
+      <rect width="55" height="27" x="33.169" y="58.27" stroke="#FFFFFF" rx="2"/>
+    </g>
+    <g opacity=".75" transform="rotate(-15 263.738 -81.19)">
+      <use fill="black" filter="url(#c)" xlink:href="#d"/>
+      <use fill="#FFFFFF" xlink:href="#d"/>
+      <rect width="55" height="27" x=".5" y=".5" stroke="#949896" rx="2"/>
+      <g>
+        <use fill="black" filter="url(#e)" xlink:href="#f"/>
+        <use fill="#FFFFFF" xlink:href="#f"/>
+      </g>
+    </g>
+    <g transform="translate(12 12)">
+      <use fill="black" filter="url(#g)" xlink:href="#h"/>
+      <use fill="#FFFFFF" xlink:href="#h"/>
+      <rect width="52" height="70" x="1" y="1" stroke="#DF7B09" stroke-width="2"/>
+      <use fill="#DF7B09" xlink:href="#i"/>
+      <rect width="52" height="24" x="1" y="1" stroke="#DF7B09" stroke-width="2"/>
+      <g stroke="#949896" transform="translate(6 64)">
+        <path d="M.976744186 0L.976744186 3M2.93023256 0L2.93023256 3M3.90697674 0L3.90697674 3M5.86046512 0L5.86046512 3"/>
+        <path stroke-width="2" d="M7.81395349,0 L7.81395349,3"/>
+        <path d="M3.90697674 0L3.90697674 3M14.6511628 0L14.6511628 3M16.6046512 0L16.6046512 3M19.5348837 0L19.5348837 3"/>
+        <path stroke-width="2" d="M22.4651163,0 L22.4651163,3"/>
+        <path d="M17.5813953 0L17.5813953 3M10.744186 0L10.744186 3M25.3953488 0L25.3953488 3"/>
+        <path stroke-width="2" d="M27.3488372,0 L27.3488372,3"/>
+        <path d="M34.1860465,0 L34.1860465,3"/>
+        <path stroke-width="2" d="M41.0232558,0 L41.0232558,3"/>
+        <path d="M30.2790698,0 L30.2790698,3"/>
+        <path stroke-width="2" d="M12.6976744,0 L12.6976744,3"/>
+      </g>
+      <path stroke="#FFFFFF" stroke-width="2" d="M7,9 L24,9"/>
+      <path stroke="#FFFFFF" d="M35,4 L52,4"/>
+      <path stroke="#FFFFFF" stroke-width="2" d="M7 13L22 13M7 17L24 17"/>
+      <path stroke="#949896" stroke-width="2" d="M7 41L45 41M7 44.3333333L41 44.3333333M7 49L24 49"/>
+      <path stroke="#949896" stroke-width="4" d="M7,35 L32,35"/>
+    </g>
+  </g>
+</svg>

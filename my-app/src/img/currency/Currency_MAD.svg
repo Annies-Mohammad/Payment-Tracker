@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 23" enable-background="new 0 0 40 23" xml:space="preserve">
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_79_" x="0" width="40" height="23"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_79_"  overflow="visible"/>
+		</clipPath>
+		<rect x="0" clip-path="url(#SVGID_2_)" fill="#B01F35" width="40" height="23"/>
+		<polygon clip-path="url(#SVGID_2_)" fill="#296437" points="18.4,9.7 13.3,9.7 19.1,14.1 20,13.4 16.4,10.7 18.1,10.7 		"/>
+		<polygon clip-path="url(#SVGID_2_)" fill="#296437" points="21.6,9.7 20,4.6 17.8,11.7 18.6,12.4 20,8.1 20.5,9.7 		"/>
+		<polygon clip-path="url(#SVGID_2_)" fill="#296437" points="22.6,12.8 26.7,9.7 19.5,9.7 19.2,10.7 23.6,10.7 22.2,11.7 		"/>
+		<polygon clip-path="url(#SVGID_2_)" fill="#296437" points="20,14.7 24.2,17.9 21.9,10.7 20.8,10.7 22.2,15.1 20.9,14.1 		"/>
+		<polygon clip-path="url(#SVGID_2_)" fill="#296437" points="17.4,12.8 15.8,17.9 21.7,13.5 21.4,12.4 17.8,15.1 18.3,13.5 		"/>
+	</g>
+</g>
+<g>
+	<path fill="#CCCCCC" d="M39.8,0.2v22.5H0.2V0.2H39.8 M40,0H0v23h40V0L40,0z"/>
+</g>
+</svg>

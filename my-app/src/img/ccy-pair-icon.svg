@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Swith CCY Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="15" cy="15" rx="15" ry="15"></ellipse>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30" height="30" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Registration---Personal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_Personal-Onboarding_Registration_Step-2_Desktop" transform="translate(-485.000000, -382.000000)">
+            <g id="Form" transform="translate(215.000000, 239.000000)">
+                <g id="Transfer-Needs" transform="translate(60.000000, 20.000000)">
+                    <g id="Form-fields" transform="translate(0.000000, 91.000000)">
+                        <g id="CCY-Pair">
+                            <g transform="translate(0.000000, 24.000000)" id="Swith-CCY-Icon">
+                                <g transform="translate(210.000000, 8.000000)">
+                                    <use id="Oval-21" stroke="#3c3c3b" mask="url(#mask-2)" stroke-width="3" xlink:href="#path-1"></use>
+                                    <path d="M19.4647748,14.5102319 L17.4798779,12.5156763 C17.2418523,12.2764924 17.2529887,11.8992787 17.5047519,11.6731459 C17.756515,11.4470131 18.1535672,11.4575931 18.3915928,11.696777 L21.6812842,15.0024765 C21.9099265,15.2322314 21.9099246,15.5916277 21.6812798,15.8213803 L18.3920674,19.1265297 C18.1540392,19.3657113 17.7569868,19.3762874 17.5052262,19.1501521 C17.2534655,18.9240168 17.2423332,18.546803 17.4803615,18.3076214 L20.0946583,15.6806577 L7.93573384,15.6806577 C7.5892647,15.6806577 7.30839597,15.4186489 7.30839597,15.0954448 C7.30839597,14.7722407 7.5892647,14.5102319 7.93573384,14.5102319 L19.4647748,14.5102319 Z M20.6287776,15.6798989 L20.7695693,15.8213758 L20.7695702,15.6581179 C20.7245091,15.6701531 20.6773726,15.6776052 20.6287776,15.6798989 Z" id="Shape-Copy-3" fill="#3c3c3b"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
