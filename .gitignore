@@ -11,11 +11,6 @@ WebEssentials2015-Settings.json
 
 *.user
 *.orig
-*.min.js
-*.min.js.map
-*.min.css
-*.css.map
-*.css
 *.lock.json
 
 bundle.*
