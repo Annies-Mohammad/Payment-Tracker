@@ -1,60 +1,60 @@
 import React, { Component } from 'react';
-// import '../css/site.min.css';
+import '../css/site.min.css';
 
 class Body1 extends Component {
   render() {
     return (
       <div>
-      <div class="uia-payment-options ofx-payment-options">
-         <div class="ofx-heading">
+      <div className="uia-payment-options ofx-payment-options">
+         <div className="ofx-heading">
             <h2>Transfer Summary</h2>
          </div>
-         <div class="ofx-heading">
-         <img src="world.jpg" alt="huy" width="500" height="600" />
+         <div className="ofx-heading">
+         <img src="world.jpg" alt="huy" width="auto" height="500" style={ { display: 'block', margin: '0 auto' } }/>
          </div>
-         <div class="ofx-payment-options-details row">             
-            <div class="uia-bank-transfer bank-transfer-options col-md-8">
+         <div className="ofx-payment-options-details row">             
+            <div className="uia-bank-transfer bank-transfer-options col-md-8">
                <h4>Total amount you send to OFX</h4>
- 			   <h2><span class="text-primary">AUD 1,000,000</span></h2><br/>
+ 			   <h2><span className="text-primary">AUD 1,000,000</span></h2><br/>
 			   <h6><span  >Due on 14 August 2018</span></h6><br/>
 
-               <div class="row">
-                  <div class="bank-transfer col-md-6">
-                      <dl class="uia-bank-details">
-                        <dt class="uia-payee">Your transfer</dt>
+               <div className="row">
+                  <div className="bank-transfer col-md-6">
+                      <dl className="uia-bank-details">
+                        <dt className="uia-payee">Your transfer</dt>
                         <dd>AUD 10,000</dd>
-                        <dt class="uia-bsb">Your rate</dt>
+                        <dt className="uia-bsb">Your rate</dt>
                         <dd>0.7503</dd>
-                        <dt class="uia-account-no">OFX Transfer Fee</dt>
+                        <dt className="uia-account-no">OFX Transfer Fee</dt>
                         <dd>AUD 0</dd>
-                        <dt class="uia-swift">Other Fee(estimate)*</dt>
+                        <dt className="uia-swift">Other Fee(estimate)*</dt>
                         <dd>USD 25.00</dd>
-                        <dt class="uia-iban">Payment method</dt>
+                        <dt className="uia-iban">Payment method</dt>
                         <dd>Commonwealth Banl xxxx 4567</dd>
-                        <dt class="uia-reference">Booked on</dt>
+                        <dt className="uia-reference">Booked on</dt>
                         <dd>13 August 2018</dd>
-                        <dt class="uia-address">Business name</dt>
+                        <dt className="uia-address">Business name</dt>
                         <dd>Business
                         </dd>
-                        <dt class="uia-address">Entered By</dt>
+                        <dt className="uia-address">Entered By</dt>
                         <dd>Name
                         </dd>
                      </dl>
                   </div>
-                  <div class="bank-transfer col-md-6">
+                  <div className="bank-transfer col-md-6">
                      <h5>BANK OF AMERICA, N.A. SYDNEY</h5>
-                     <dl class="uia-bank-details">
-                        <dt class="uia-payee">Payee</dt>
+                     <dl className="uia-bank-details">
+                        <dt className="uia-payee">Payee</dt>
                         <dd>OzForex Limited</dd>
-                        <dt class="uia-bsb">Branch Code</dt>
+                        <dt className="uia-bsb">Branch Code</dt>
                         <dd>232001</dd>
-                        <dt class="uia-account-no">Account no.</dt>
+                        <dt className="uia-account-no">Account no.</dt>
                         <dd>15283119</dd>
-                        <dt class="uia-swift">SWIFT / BIC</dt>
+                        <dt className="uia-swift">SWIFT / BIC</dt>
                         <dd>BOFAAUSXXXX</dd>
-                        <dt class="uia-reference">Reference</dt>
+                        <dt className="uia-reference">Reference</dt>
                         <dd>125065508</dd>
-                        <dt class="uia-address">Address</dt>
+                        <dt className="uia-address">Address</dt>
                         <dd>Bank of America N.A, Sydney Branch
                            Level 37, Governor Philip Tower, 1 Farrer Place
                            SYDNEY NSW 2000

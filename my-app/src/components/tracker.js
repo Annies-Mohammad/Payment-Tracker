@@ -6,10 +6,17 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Step1 from '../mock/step1';
+import Step2 from '../mock/step2';
+import Step3 from '../mock/step3';
+import Step4 from '../mock/step4';
+import Step5 from '../mock/step5';
+import Step6 from '../mock/step6';
+import StepDelay from '../mock/stepDelay';
 
 const styles = theme => ({
   root: {
-    width: '90%',
+    width: '100%',
   },
   button: {
     marginRight: theme.spacing.unit,
@@ -23,12 +30,12 @@ const styles = theme => ({
 function getSteps() {
    return [
     "Transfer Confirmed",
-    "Awaiting Funds",
+    "Send Funds to OFX",
     "Received by OFX",
     "Funds Delay",
-    "Payment Processed",
-    "Payment Sent to Recipient",
-    "Payment Recieved by Recipient"
+    "OFX processing transfer",
+    "Sent to recipient",
+    "Received by recipient"
   ];
 }
 
@@ -37,17 +44,17 @@ function getStepContent(step) {
     case 0:
       return "Transfer Confirmed";
     case 1:
-      return "Awaiting Funds";
+      return "Send Funds to OFX";
     case 2:
       return "Received by OFX";
     case 3:
       return "Funds Delay: Your Money will be delayed because of US Bank Holiday!";
     case 4:
-      return "Payment Processed";
+      return "OFX processing transfer";
     case 5:
-      return "Payment Sent to Recipient";
+      return "Sent to recipient";
     case 6:
-      return "Payment Recieved by Recipient";
+      return "Received by recipient";
     default:
       return "";
   }
@@ -55,8 +62,11 @@ function getStepContent(step) {
 
 class HorizontalNonLinearStepperWithError extends React.Component {
   state = {
-    activeStep: 0,
+    activeStep: 6,
     skipped: new Set(),
+    failedStepIndex: 3,
+    failedStepReason: 'Funds Delay: Your Money will be delayed because of US Bank Holiday!',
+    currentStepDetail: null,
   };
 
   isStepOptional = step => {
@@ -64,7 +74,8 @@ class HorizontalNonLinearStepperWithError extends React.Component {
   };
 
   isStepFailed = step => {
-    return step === 3;
+    const { failedStepIndex } = this.state;
+    return step === failedStepIndex;
   };
 
   handleNext = () => {
@@ -115,11 +126,48 @@ class HorizontalNonLinearStepperWithError extends React.Component {
     return this.state.skipped.has(step);
   }
 
+  getIconUrl = (step, currentStep) => {
+    const isCompleted = step < currentStep;
+    const isCurrent = step === currentStep;
+    const standardIcons = [
+      'icons/tick-complete.svg',
+      `icons/${isCompleted? 'send-funds-complete.svg': (isCurrent? 'send-funds-in-use.svg':'send-funds-awaiting.svg')}`,
+      `icons/${isCompleted? 'ofx-complete.svg': (isCurrent? 'ofx-in-use.svg':'ofx-awaiting.svg')}`,
+      `icons/${isCompleted? 'processing-complete.svg': (isCurrent? 'processing-in-use.svg':'processing-awaiting.svg')}`,
+      `icons/${isCompleted? 'send-funds-complete.svg': (isCurrent? 'send-funds-in-use.svg':'send-funds-awaiting.svg')}`,
+      `icons/${!isCurrent? 'received-awaiting.svg': 'received-in-use.svg'}`
+    ];
+    const { failedStepIndex } = this.state;
+    if(failedStepIndex && failedStepIndex >= 0){
+      standardIcons.splice(failedStepIndex, 0, '');
+    }
+    return standardIcons[step] || '';
+  };
+
+  handleIconClick = (step, e) => {
+
+    const { failedStepIndex } = this.state;
+    const stepDetails = {
+      0: '0',
+      1: '1',
+      2: '2',
+      3: '3',
+      4: '4',
+      5: '5',      
+    };
+    /*const { failedStepIndex, failedStepReason } = this.state;
+    if(failedStepIndex && failedStepIndex >= 0){
+      stepDetails[failedStepIndex] = failedStepReason;
+    }
+    this.setState({
+      currentStepDetail: step,
+    });*/
+  };
+
   render() {
     const { classes } = this.props;
     const steps = getSteps();
     const { activeStep } = this.state;
-
     return (
       <div className={classes.root}>
         <Stepper alternativeLabel activeStep={activeStep}>
@@ -135,6 +183,12 @@ class HorizontalNonLinearStepperWithError extends React.Component {
             }
             if (this.isStepFailed(index)) {
               labelProps.error = true;
+            } else {
+              labelProps.icon = (
+                <div style={{ cursor: 'pointer' }} onClick={this.handleIconClick.bind(this,index)}>
+                  <img alt="gd" src={this.getIconUrl(index, activeStep)} width="40" height="40"/>
+                </div>
+              );
             }
             if (this.isStepSkipped(index)) {
               props.completed = false;
@@ -146,6 +200,15 @@ class HorizontalNonLinearStepperWithError extends React.Component {
             );
           })}
         </Stepper>
+        <div>
+          {this.state.currentStepDetail && this.state.currentStepDetail === this.state.failedStepIndex && <StepDelay/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === 0 && <Step1/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === 1 && <Step2/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === 2 && <Step3/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === 3 && <Step4/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === 4 && <Step5/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === 5 && <Step6/>}
+        </div>
         <div>
           {activeStep === steps.length ? (
             <div>

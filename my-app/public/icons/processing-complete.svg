@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon 3 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,3 L12,5 C8.13142286,5 5,8.09525321 5,11.9075956 C5,14.5602488 6.52871543,16.943685 8.89744278,18.1015956 L8.0191045,19.8984044 C4.97234268,18.4090486 3,15.3339485 3,11.9075956 C3,6.9854491 7.03202115,3 12,3 Z M13.254609,18.8891557 C16.5233308,18.3043432 19,15.475469 19,12.0776267 C19,9.43845452 17.4934459,7.06457733 15.1514826,5.89457709 L16.0453099,4.10542291 C19.0571872,5.61009942 21,8.67138934 21,12.0776267 C21,16.4787886 17.7867879,20.1328403 13.562416,20.8660008 L14.9674534,21.9637364 L13.7361304,23.5397579 L9.60487321,20.312066 L12.8325651,16.1808087 L14.4085866,17.4121317 L13.254609,18.8891557 Z M10.884531,4.05567188 L8.1650237,2.28960319 L9.25430177,0.612262049 L13.6511502,3.46760881 L10.7958034,7.86445726 L9.11846231,6.77517919 L10.884531,4.05567188 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="received" transform="translate(-778.000000, -434.000000)">
+            <g id="Icon-3-Copy-2" transform="translate(778.000000, 434.000000)">
+                <circle id="Oval-5" fill="#3C3C3B" cx="20" cy="20" r="20"></circle>
+                <g id="Icon/OFX/TransferProgress" transform="translate(8.000000, 8.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#3C3C3B" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Colour/White/Base" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="1">
+                        <rect id="Base" x="0.5" y="0.5" width="23" height="23"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

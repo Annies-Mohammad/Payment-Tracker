@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon 3 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20" cy="20" r="20"></circle>
+        <filter x="-28.8%" y="-28.8%" width="162.5%" height="162.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OFX-received" transform="translate(-627.000000, -427.000000)">
+            <g id="Icon-3-Copy" transform="translate(634.000000, 434.000000)">
+                <g id="Oval-5">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#E47305" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M27.3333333,19.9999242 C27.3333333,20.8793148 26.6542482,21.5919988 25.8166698,21.5919988 L24.6667163,21.5919988 C22.6340724,21.5910522 20.7557113,22.729811 19.7396901,24.5761 L19.1647634,25.6207248 C18.7456234,26.3825267 17.8177208,26.642526 17.0925213,26.2028833 C16.3665198,25.7639768 16.1178026,24.7904522 16.5369426,24.0287554 L17.1118693,22.9840254 C18.1286925,21.1377364 18.1286925,18.8620069 17.1118693,17.015823 L16.5620048,16.0168453 C16.1444687,15.2576728 16.3519837,14.2638489 17.0682611,13.8122159 C17.7966686,13.3513273 18.7407112,13.6096437 19.1647634,14.3791236 L19.7396901,15.4237484 C20.7565133,17.2708789 22.6340724,18.408691 24.6667163,18.408691 L25.8166698,18.408691 C26.6542482,18.408691 27.3333333,19.1204284 27.3333333,19.9999242 M14.500799,10.4754468 C9.24070924,13.5120862 7.4380865,20.2384217 10.4754736,25.499238 C13.5121207,30.7592087 20.2384733,32.5619326 25.499303,29.5245532 C30.759287,26.4870681 32.5619097,19.7607326 29.5245226,14.500762 C26.4878755,9.24079128 19.7616287,7.43806741 14.500799,10.4754468" id="Fill-363" stroke="#FFFFFF" stroke-width="1.5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

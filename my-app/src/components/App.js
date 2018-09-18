@@ -4,7 +4,6 @@ import logo from '../logo.svg';
 import '../css/App.css';
 import '../css/site.min.css';
 import Body1 from '../mock/body1';
-import Body2 from '../mock/body2';
 
 class App extends Component {
   render() {
