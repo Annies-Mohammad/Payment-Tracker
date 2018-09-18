@@ -33,10 +33,10 @@ namespace PaymentTrackerAPI.Controller
         /// <returns></returns>
         [Route("api/mail/send")]
         [HttpPost]
-        public IActionResult SendMail([FromBody] MailDto mail)
+        public string SendMail([FromBody] MailDto mail)
         {
             
-            return  JsonConverter.ser _mailMethods.SendMail(mail);
+            return JsonConvert.SerializeObject( _mailMethods.SendMail(mail));
         }
 
 
