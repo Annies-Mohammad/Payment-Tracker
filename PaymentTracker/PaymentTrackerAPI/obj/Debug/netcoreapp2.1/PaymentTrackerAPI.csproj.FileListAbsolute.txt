@@ -1,0 +1,8 @@
+c:\dev\Payment-Tracker\PaymentTracker\PaymentTrackerAPI\bin\Debug\netcoreapp2.1\PaymentTrackerAPI.deps.json
+c:\dev\Payment-Tracker\PaymentTracker\PaymentTrackerAPI\bin\Debug\netcoreapp2.1\PaymentTrackerAPI.runtimeconfig.json
+c:\dev\Payment-Tracker\PaymentTracker\PaymentTrackerAPI\bin\Debug\netcoreapp2.1\PaymentTrackerAPI.runtimeconfig.dev.json
+c:\dev\Payment-Tracker\PaymentTracker\PaymentTrackerAPI\bin\Debug\netcoreapp2.1\PaymentTrackerAPI.dll
+c:\dev\Payment-Tracker\PaymentTracker\PaymentTrackerAPI\obj\Debug\netcoreapp2.1\PaymentTrackerAPI.csprojAssemblyReference.cache
+c:\dev\Payment-Tracker\PaymentTracker\PaymentTrackerAPI\obj\Debug\netcoreapp2.1\PaymentTrackerAPI.csproj.CoreCompileInputs.cache
+c:\dev\Payment-Tracker\PaymentTracker\PaymentTrackerAPI\obj\Debug\netcoreapp2.1\PaymentTrackerAPI.AssemblyInfoInputs.cache
+c:\dev\Payment-Tracker\PaymentTracker\PaymentTrackerAPI\obj\Debug\netcoreapp2.1\PaymentTrackerAPI.AssemblyInfo.cs
