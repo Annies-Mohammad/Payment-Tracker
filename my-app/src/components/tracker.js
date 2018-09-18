@@ -62,7 +62,7 @@ function getStepContent(step) {
 
 class HorizontalNonLinearStepperWithError extends React.Component {
   state = {
-    activeStep: 6,
+    activeStep: 3,
     skipped: new Set(),
     failedStepIndex: 3,
     failedStepReason: 'Funds Delay: Your Money will be delayed because of US Bank Holiday!',
@@ -146,7 +146,6 @@ class HorizontalNonLinearStepperWithError extends React.Component {
 
   handleIconClick = (step, e) => {
 
-    const { failedStepIndex } = this.state;
     const stepDetails = {
       0: '0',
       1: '1',
@@ -155,13 +154,15 @@ class HorizontalNonLinearStepperWithError extends React.Component {
       4: '4',
       5: '5',      
     };
-    /*const { failedStepIndex, failedStepReason } = this.state;
+    const { failedStepIndex, failedStepReason } = this.state;
     if(failedStepIndex && failedStepIndex >= 0){
       stepDetails[failedStepIndex] = failedStepReason;
     }
     this.setState({
-      currentStepDetail: step,
-    });*/
+      currentStepDetail: stepDetails[step],
+    });
+    console.log(stepDetails);
+    console.log(step);
   };
 
   render() {
@@ -202,12 +203,12 @@ class HorizontalNonLinearStepperWithError extends React.Component {
         </Stepper>
         <div>
           {this.state.currentStepDetail && this.state.currentStepDetail === this.state.failedStepIndex && <StepDelay/>}
-          {this.state.currentStepDetail && this.state.currentStepDetail === 0 && <Step1/>}
-          {this.state.currentStepDetail && this.state.currentStepDetail === 1 && <Step2/>}
-          {this.state.currentStepDetail && this.state.currentStepDetail === 2 && <Step3/>}
-          {this.state.currentStepDetail && this.state.currentStepDetail === 3 && <Step4/>}
-          {this.state.currentStepDetail && this.state.currentStepDetail === 4 && <Step5/>}
-          {this.state.currentStepDetail && this.state.currentStepDetail === 5 && <Step6/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === '0' && <Step1/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === '1' && <Step2/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === '2' && <Step3/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === '3' && <Step4/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === '4' && <Step5/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === '5' && <Step6/>}
         </div>
         <div>
           {activeStep === steps.length ? (
