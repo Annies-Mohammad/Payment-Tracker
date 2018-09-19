@@ -178,7 +178,7 @@ class HorizontalNonLinearStepperWithError extends React.Component {
       '14/09/2018',
       '15/09/2018',
       '16/09/2018',
-      '16/09/2018',
+      '17/09/2018',
       '18/09/2018',
       'ETA: 20/09/2018',
     ];
