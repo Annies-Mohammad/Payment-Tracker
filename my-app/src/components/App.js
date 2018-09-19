@@ -3,7 +3,7 @@ import Tracker from './tracker';
 import logo from '../logo.svg';
 import '../css/App.css';
 import '../css/site.min.css';
-import Body1 from '../mock/body1';
+
 
 class App extends Component {
   render() {
@@ -19,7 +19,6 @@ class App extends Component {
             
           </p>
         </div>
-        <Body1/>
 
       </div>
     );

@@ -13,6 +13,7 @@ import Step4 from '../mock/step4';
 import Step5 from '../mock/step5';
 import Step6 from '../mock/step6';
 import StepDelay from '../mock/stepDelay';
+import Body1 from '../mock/body1';
 
 const styles = theme => ({
   root: {
@@ -220,6 +221,8 @@ class HorizontalNonLinearStepperWithError extends React.Component {
           {this.state.currentStepDetail && this.state.currentStepDetail === '4' && <Step5/>}
           {this.state.currentStepDetail && this.state.currentStepDetail === '5' && <Step6/>}
         </div>
+        <Body1 mapUrl={this.state.activeStep > 3 ? 'img1.jpg':'img2.jpg'}/>
+
       </div>
     );
   }
