@@ -3,17 +3,17 @@ import '../css/site.min.css';
 
 export default ({ mapUrl= 'img1.jpg'}) => 
 <div>
-<div className="uia-payment-options ofx-payment-options">
+<div className="uia-payment-options ofx-payment-options" style={ { 'text-align': 'left' } }>
           <div className="ofx-heading">
    <img src={mapUrl} alt="Trackr" width="auto" height="500" style={ { display: 'block', margin: '0 auto' } }/>
    </div>
    <div className="ofx-payment-options-details row">             
-      <div className="uia-bank-transfer bank-transfer-options  col-sm-12">
+      <div className="uia-bank-transfer bank-transfer-options  col-md-12">
          
 
          <div class="row">
-   <div class="bank-transfer col-sm-4"></div>
-            <div class="bank-transfer col-sm-3"  style={ { padding: '0px'} }>
+   <div class="bank-transfer col-md-4"></div>
+            <div class="bank-transfer col-md-3"  style={ { padding: '0px'} }>
     <h4>Total amount you send to OFX</h4>
     <h2><span class="text-primary">AUD 1,000,000</span></h2> 
       <h6><span  >Due on 14 August 2018</span></h6><br/>
@@ -39,7 +39,7 @@ export default ({ mapUrl= 'img1.jpg'}) =>
                </dl>
             </div>
    
-           <div class="bank-transfer col-sm-3">
+           <div class="bank-transfer col-md-3">
                 <dl class="uia-bank-details">
       <h4>Recipients receive</h4>
     <h2><span class="text-primary">USD  719,425</span></h2> 
@@ -56,15 +56,15 @@ export default ({ mapUrl= 'img1.jpg'}) =>
                   <dd>Other</dd>
                   <dt class="uia-reference">Reference</dt>
                   <dd>Reference</dd>
-                  <dt class="uia-address"><strong>Attach recipient later ~</strong></dt>
+                  <dt class="uia-address"><strong><u>Attach recipient later</u></strong></dt>
                   <dd>
                   </dd>
-                  <dt class="uia-address"><strong>Third recipient ~</strong></dt>
+                  <dt class="uia-address"><strong><u>Third recipient</u></strong></dt>
                   <dd>
                   </dd>
                </dl>
             </div>
-      <div class="bank-transfer col-sm-2"></div>
+        <div class="bank-transfer col-md-3"></div>
          </div>
       </div>
    </div>
