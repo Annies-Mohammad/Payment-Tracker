@@ -5,7 +5,7 @@ class Step6 extends Component {
     return (
       <div>
       <b>   Sammy Won has received your transfer!
-Received on <span class="text-primary">24 September 2018</span>.</b>
+Received on <span class="text-primary">20 September 2018</span>.</b>
       </div>
     );
   }
