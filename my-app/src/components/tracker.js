@@ -241,7 +241,6 @@ class HorizontalNonLinearStepperWithError extends React.Component {
             {this.state.currentStepDetail && this.state.currentStepDetail === '5' && <Step6/>}
           </div>
         </div>
-        {this.state.currentStepDetail}
         <Body1 mapUrl={this.state.activeStep >= 2 && this.state.currentStepDetail !== '5'? 'img1.jpg': (this.state.currentStepDetail === '5'? 'end-map.jpg' :'img2.jpg')} expectedDate={'ETA: 14/09/2018'}/>
 
       </div>

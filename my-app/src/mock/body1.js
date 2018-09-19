@@ -5,7 +5,7 @@ export default ({ mapUrl= 'img1.jpg', expectedDate = ''}) =>
 <div>
 <div className="uia-payment-options ofx-payment-options" style={ { 'text-align': 'left','overflow': 'hidden' } }>
           <div className="ofx-heading">
-   <img src={mapUrl} alt="Trackr" width="auto" height="500" style={ { display: 'block', margin: '0 auto' } }/>
+   <img src={mapUrl} alt="Trackr" width="90%" height="500" style={ { display: 'block', margin: '0 auto' } }/>
    </div>
    <div className="ofx-payment-options-details row">             
       <div className="uia-bank-transfer bank-transfer-options  col-md-12">
