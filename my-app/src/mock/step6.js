@@ -4,8 +4,8 @@ class Step6 extends Component {
   render() {
     return (
       <div>
-         Sammy Won has received your transfer!
-Received on <span class="text-primary">24 September 2018</span>.
+      <b>   Sammy Won has received your transfer!
+Received on <span class="text-primary">24 September 2018</span>.</b>
       </div>
     );
   }
