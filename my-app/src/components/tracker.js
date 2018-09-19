@@ -169,7 +169,13 @@ class HorizontalNonLinearStepperWithError extends React.Component {
     return standardIcons[step] || '';
   };
 
-  
+  getLabel = (index, currentStep, label, date = '') => {
+    const isCompleted = index < currentStep;
+    return (<div>
+      <div>{isCompleted ? <b>{label}</b> : <span  style= {{ color: 'rgba(0, 0, 0, 0.54)' }}>{label}</span>}</div>
+      <div style= {{ color: 'rgba(0, 0, 0, 0.54)' }}>{date}</div>
+    </div>);
+  }
 
   render() {
     const { classes } = this.props;
@@ -207,8 +213,8 @@ class HorizontalNonLinearStepperWithError extends React.Component {
             }
             return (
               <Step key={label} {...props}>
-                <StepLabel {...labelProps}>{label}</StepLabel>
-              </Step>
+              <StepLabel {...labelProps}>{this.getLabel(index, activeStep, label, '19/09/2018')}</StepLabel>
+            </Step>
             );
           })}
         </Stepper>
