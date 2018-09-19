@@ -212,7 +212,7 @@ class HorizontalNonLinearStepperWithError extends React.Component {
           })}
         </Stepper>
         <div>
-          {this.state.currentStepDetail && this.state.currentStepDetail === this.state.failedStepReason && <StepDelay/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === this.state.failedStepReason && <StepDelay delayReason={this.state.failedStepReason} />}
           {this.state.currentStepDetail && this.state.currentStepDetail === '0' && <Step1/>}
           {this.state.currentStepDetail && this.state.currentStepDetail === '1' && <Step2/>}
           {this.state.currentStepDetail && this.state.currentStepDetail === '2' && <Step3/>}
