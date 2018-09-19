@@ -25,11 +25,11 @@ export default ({ mapUrl= 'img1.jpg', expectedDate = ''}) =>
                   <dt class="uia-account-no">OFX Transfer Fee</dt>
                   <dd>AUD 0</dd>
                   <dt class="uia-swift">Other Fee(estimate)*</dt>
-                  <dd>USD 25.00</dd>
+                  <dd>USD 25.00</dd>  
                   <dt class="uia-iban">Payment method</dt>
                   <dd>Commonwealth Bank xxxx 4567</dd>
                   <dt class="uia-reference">Booked on</dt>
-                  <dd>14 August 2018</dd>
+                  <dd>13 August 2018</dd>
                   <dt class="uia-address">Business name</dt>
                   <dd>Business
                   </dd>
