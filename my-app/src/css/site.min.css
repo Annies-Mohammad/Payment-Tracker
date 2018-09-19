@@ -12354,7 +12354,7 @@ dt {
   margin-bottom: 15px;
   padding-right: 10px;
   vertical-align: top;
-  width: 30%; }
+  width: 50%; }
 
 dd {
   color: #000;
@@ -12365,7 +12365,7 @@ dd {
   overflow: hidden;
   vertical-align: top;
   white-space: pre-wrap;
-  width: 65%;
+  width: 50%;
   word-wrap: break-word; }
 
 .collapsible-container {
