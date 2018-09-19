@@ -40,7 +40,8 @@ function getSteps() {
 }
 
 function getStepContent(step) {
-  switch (step) {
+  // handleIconClick(step, null);
+  /*switch (step) {
     case 0:
       return "Transfer Confirmed";
     case 1:
@@ -57,12 +58,35 @@ function getStepContent(step) {
       return "Received by recipient";
     default:
       return "";
-  }
+  }*/
 }
 
 class HorizontalNonLinearStepperWithError extends React.Component {
+  handleIconClick = (step, e) => {
+
+    this.setState({
+      activeStep: step, //for demo only
+    });
+
+    const stepDetails = [
+      [0,'0'],
+      [1,'1'],
+      [2,'2'],
+      [3,'3'],
+      [4,'4'],
+      [5,'5'],
+    ];
+    const { failedStepIndex, failedStepReason } = this.state;
+    if(failedStepIndex && failedStepIndex >= 0){
+      stepDetails.splice(failedStepIndex, 0, [failedStepIndex, failedStepReason]);
+    }
+    this.setState({
+      currentStepDetail: stepDetails[step][1],
+    });
+  };
+
   state = {
-    activeStep: 3,
+    activeStep: 1,
     skipped: new Set(),
     failedStepIndex: 3,
     failedStepReason: 'Funds Delay: Your Money will be delayed because of US Bank Holiday!',
@@ -144,26 +168,7 @@ class HorizontalNonLinearStepperWithError extends React.Component {
     return standardIcons[step] || '';
   };
 
-  handleIconClick = (step, e) => {
-
-    const stepDetails = {
-      0: '0',
-      1: '1',
-      2: '2',
-      3: '3',
-      4: '4',
-      5: '5',      
-    };
-    const { failedStepIndex, failedStepReason } = this.state;
-    if(failedStepIndex && failedStepIndex >= 0){
-      stepDetails[failedStepIndex] = failedStepReason;
-    }
-    this.setState({
-      currentStepDetail: stepDetails[step],
-    });
-    console.log(stepDetails);
-    console.log(step);
-  };
+  
 
   render() {
     const { classes } = this.props;
@@ -184,6 +189,11 @@ class HorizontalNonLinearStepperWithError extends React.Component {
             }
             if (this.isStepFailed(index)) {
               labelProps.error = true;
+              labelProps.icon = (
+                <div style={{ cursor: 'pointer' }} onClick={this.handleIconClick.bind(this,index)}>
+                  <img alt="gd" src='icons/alert.jpg' width="40" height="40"/>
+                </div>
+              );
             } else {
               labelProps.icon = (
                 <div style={{ cursor: 'pointer' }} onClick={this.handleIconClick.bind(this,index)}>
@@ -202,56 +212,13 @@ class HorizontalNonLinearStepperWithError extends React.Component {
           })}
         </Stepper>
         <div>
-          {this.state.currentStepDetail && this.state.currentStepDetail === this.state.failedStepIndex && <StepDelay/>}
+          {this.state.currentStepDetail && this.state.currentStepDetail === this.state.failedStepReason && <StepDelay/>}
           {this.state.currentStepDetail && this.state.currentStepDetail === '0' && <Step1/>}
           {this.state.currentStepDetail && this.state.currentStepDetail === '1' && <Step2/>}
           {this.state.currentStepDetail && this.state.currentStepDetail === '2' && <Step3/>}
           {this.state.currentStepDetail && this.state.currentStepDetail === '3' && <Step4/>}
           {this.state.currentStepDetail && this.state.currentStepDetail === '4' && <Step5/>}
           {this.state.currentStepDetail && this.state.currentStepDetail === '5' && <Step6/>}
-        </div>
-        <div>
-          {activeStep === steps.length ? (
-            <div>
-              <Typography className={classes.instructions}>
-                All steps completed - you&quot;re finished
-              </Typography>
-              <Button onClick={this.handleReset} className={classes.button}>
-                Reset
-              </Button>
-            </div>
-          ) : (
-            <div>
-              <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
-              <div>
-                <Button
-                  disabled={activeStep === 0}
-                  onClick={this.handleBack}
-                  className={classes.button}
-                >
-                  Back
-                </Button>
-                {this.isStepOptional(activeStep) && (
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={this.handleSkip}
-                    className={classes.button}
-                  >
-                    Skip
-                  </Button>
-                )}
-                <Button
-                  variant="contained"
-                  color="primary"
-                  onClick={this.handleNext}
-                  className={classes.button}
-                >
-                  {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-                </Button>
-              </div>
-            </div>
-          )}
         </div>
       </div>
     );
