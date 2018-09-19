@@ -33,8 +33,8 @@ function getSteps() {
     "Transfer Confirmed",
     "Send Funds to OFX",
     "Received by OFX",
-    "Funds Delay",
     "OFX processing transfer",
+    "Funds Delay", // demo remove
     "Sent to recipient",
     "Received by recipient"
   ];
@@ -89,7 +89,7 @@ class HorizontalNonLinearStepperWithError extends React.Component {
   state = {
     activeStep: 1,
     skipped: new Set(),
-    failedStepIndex: 3,
+    failedStepIndex: 4, // demo only-1,
     failedStepReason: 'Funds Delay: Your Money will be delayed because of US Bank Holiday!',
     currentStepDetail: null,
   };
