@@ -4,7 +4,8 @@ class Step2 extends Component {
   render() {
     return (
       <div>
-          <b>Step2</b>
+          <b>We are waiting for your funds.
+Your bank may take up to 24 hours to send your funds to us. Once we have received your funds we will let you know.</b>
       </div>
     );
   }
