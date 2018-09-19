@@ -3,6 +3,7 @@ import '../css/site.min.css';
 
 export default ({ mapUrl= 'img1.jpg', expectedDate = ''}) => 
 <div>
+  <h1>Transfer Summary</h1>
 <div className="uia-payment-options ofx-payment-options" style={ { 'text-align': 'left','overflow': 'hidden' } }>
           <div className="ofx-heading">
    <img src={mapUrl} alt="Trackr" width="90%" height="500" style={ { display: 'block', margin: '0 auto' } }/>
