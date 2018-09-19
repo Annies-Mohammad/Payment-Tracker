@@ -170,10 +170,19 @@ class HorizontalNonLinearStepperWithError extends React.Component {
   };
 
   getLabel = (index, currentStep, label, date = '') => {
+    const dates = [
+      '01/09/2018',
+      '04/09/2018',
+      '06/09/2018',
+      '09/09/2018',
+      '12/09/2018',
+      '13/09/2018',
+      'ETA: 14/09/2018',
+    ];
     const isCompleted = index < currentStep;
     return (<div>
       <div>{isCompleted ? <b>{label}</b> : <span  style= {{ color: 'rgba(0, 0, 0, 0.54)' }}>{label}</span>}</div>
-      <div style= {{ color: 'rgba(0, 0, 0, 0.54)' }}>{date}</div>
+      <div style= {{ color: 'rgba(0, 0, 0, 0.54)' }}>{dates[index]}</div>
     </div>);
   }
 
@@ -227,7 +236,7 @@ class HorizontalNonLinearStepperWithError extends React.Component {
           {this.state.currentStepDetail && this.state.currentStepDetail === '4' && <Step5/>}
           {this.state.currentStepDetail && this.state.currentStepDetail === '5' && <Step6/>}
         </div>
-        <Body1 mapUrl={this.state.activeStep > 3 ? 'img1.jpg':'img2.jpg'}/>
+        <Body1 mapUrl={this.state.activeStep > 3 ? 'img1.jpg':'img2.jpg'} expectedDate={'ETA: 14/09/2018'}/>
 
       </div>
     );

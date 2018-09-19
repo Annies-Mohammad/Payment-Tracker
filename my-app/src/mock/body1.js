@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/site.min.css';
 
-export default ({ mapUrl= 'img1.jpg'}) => 
+export default ({ mapUrl= 'img1.jpg', expectedDate = ''}) => 
 <div>
 <div className="uia-payment-options ofx-payment-options" style={ { 'text-align': 'left','overflow': 'hidden' } }>
           <div className="ofx-heading">
@@ -43,7 +43,7 @@ export default ({ mapUrl= 'img1.jpg'}) =>
                 <dl class="uia-bank-details">
       <h4>Recipients receive</h4>
     <h2><span class="text-primary">USD  719,425</span></h2> 
-      <h6><span  >Funds should be received by 17 August 2018</span></h6><br/>
+      <h6><span  >Funds should be received by {expectedDate}</span></h6><br/>
                   <dt class="uia-payee"><strong>Olivia Felix ~</strong></dt>
                   <dd></dd>
                   <dt class="uia-bsb">This recipient receives</dt>
