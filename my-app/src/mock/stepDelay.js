@@ -2,5 +2,5 @@ import React, { Component } from 'react';
 
 export default ({ delayReason }) => 
   <div> 
-    Hello {delayReason}!
+    <b>Hello {delayReason}!</b>
   </div>;
