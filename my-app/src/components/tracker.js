@@ -183,7 +183,6 @@ class HorizontalNonLinearStepperWithError extends React.Component {
       'ETA: 20/09/2018',
     ];
     const isCompleted = index <= currentStep;
-    console.log(index + '   ' + dates[index].indexOf('ETA'));
     return (<div>
       <div>{isCompleted ? <b>{label}</b> : <span  style= {{ color: 'rgba(0, 0, 0, 0.54)' }}>{label}</span>}</div>
       <div>{isCompleted ? <b>{dates[index].replace('ETA:','')}</b> : (dates[index].indexOf('ETA') >= 0 ? <span  style= {{ color: 'rgba(0, 0, 0, 0.54)' }}>{dates[index]}</span> : '')}</div>
@@ -231,8 +230,8 @@ class HorizontalNonLinearStepperWithError extends React.Component {
             );
           })}
         </Stepper>
-        <div style={{backgroundColor: 'white', 'margin-top': '0px', 'margin-bottom': '50px'}}>
-          <div style={{'padding-top': '15px', 'padding-bottom': '30px'}}>
+        <div style={{backgroundColor: 'white', 'marginTop': '0px', 'marginBottom': '50px'}}>
+          <div style={{'paddingTop': '15px', 'paddingBottom': '30px'}}>
             {this.state.currentStepDetail && this.state.currentStepDetail === this.state.failedStepReason && <StepDelay delayReason={this.state.failedStepReason} />}
             {this.state.currentStepDetail && this.state.currentStepDetail === '0' && <Step1/>}
             {this.state.currentStepDetail && this.state.currentStepDetail === '1' && <Step2/>}
@@ -242,7 +241,8 @@ class HorizontalNonLinearStepperWithError extends React.Component {
             {this.state.currentStepDetail && this.state.currentStepDetail === '5' && <Step6/>}
           </div>
         </div>
-        <Body1 mapUrl={this.state.activeStep > 3 ? 'img1.jpg':'img2.jpg'} expectedDate={'ETA: 14/09/2018'}/>
+        {this.state.currentStepDetail}
+        <Body1 mapUrl={this.state.activeStep >= 2 && this.state.currentStepDetail !== '5'? 'img1.jpg': (this.state.currentStepDetail === '5'? 'end-map.jpg' :'img2.jpg')} expectedDate={'ETA: 14/09/2018'}/>
 
       </div>
     );
