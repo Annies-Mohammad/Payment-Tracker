@@ -94,6 +94,9 @@ class HorizontalNonLinearStepperWithError extends React.Component {
     currentStepDetail: null,
   };
 
+  componentDidMount() {
+    this.handleIconClick(this.state.activeStep, null);
+  }
   isStepOptional = step => {
     return false; //step === 3;
   };
